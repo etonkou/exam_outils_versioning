@@ -8,8 +8,18 @@ import plotly.express as px
 data = pd.read_csv('data/california_housing_train.csv')
 
 print('*'*50)
-
 print(data)
+
+print('*'*50)
+print('====== data stats ======= ')
+print('describe')
+print(data.descirbe())
+print('info')
+print(data.info())
+print('shape')
+print(data.shape)
+print('columns')
+print(data.columns)
 
 # tris sur les colonnes utiles pour notre analyse
 data = data[['total_rooms','total_bedrooms','population','households']]
@@ -33,9 +43,9 @@ print(d)
 
 
 # Analyse bivariee
-print('*'*50)
-print("Analyse bivariee")
-sb.scatterplot(data['total_rooms'],data['total_bedrooms'])
+# print('*'*50)
+# print("Analyse bivariee")
+# sb.scatterplot(data['total_rooms'],data['total_bedrooms'])
 # sb.scatterplot(data['households'],data['total_bedrooms']) 
 # sb.scatterplot(data['households'],data['population']) 
 
