@@ -5,7 +5,7 @@ import numpy as np
 import plotly.express as px
 
 # load dataset
-data = pd.read_csv('data/california_housing_train.cvs')
+data = pd.read_csv('data/california_housing_train.csv')
 
 print('*'*500)
 
