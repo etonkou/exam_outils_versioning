@@ -36,8 +36,8 @@ print(d)
 print('*'*50)
 print("Analyse bivariee")
 sb.scatterplot(data['total_rooms'],data['total_bedrooms'])
-sb.scatterplot(data['households'],data['total_bedrooms']) 
-sb.scatterplot(data['households'],data['population']) 
+# sb.scatterplot(data['households'],data['total_bedrooms']) 
+# sb.scatterplot(data['households'],data['population']) 
 
 # print('*'*50)
 # # Matrice de correlation
